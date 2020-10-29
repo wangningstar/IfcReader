@@ -1,5 +1,5 @@
 # IfcReader
-This is an ongoing project. This repository aims to parse .ifc file and extract useful information.
+This is an ongoing project. This Python repository aims to parse .ifc file and extract useful information.
 
 Module ifcreader.py is to parse .ifc file (by_type, by_id, and return structured ifc instance data)
 
