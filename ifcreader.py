@@ -16,8 +16,9 @@ def by_id(id, ifcfile):
 
 def ifcwrapper(ifcdata):
     ifclist = []
+    ifcid = ifcdata.split("= ")[0].strip("#")
     ifctype = ifcdata.split("= ")[1].split("(",1)[0]
     ifcdata = ifcdata.split("(",1)[1].split(",")
     for i in ifcdata:
         ifclist.append(i.replace("'","").replace(");","").replace("$","none"))
-    return ifctype, ifclist
+    return ifcid, ifctype, ifclist
